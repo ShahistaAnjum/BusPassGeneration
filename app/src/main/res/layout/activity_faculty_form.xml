@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideInset"
+    android:scrollbarSize="10dp"
+    android:scrollbarFadeDuration="10"
+    android:nestedScrollingEnabled="true"
+    tools:context=".FacultyForm">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Apply Faculty Pass"
+            android:textSize="35sp"
+            android:paddingLeft="35dp"
+            android:paddingRight="10dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Application Details"
+            android:textSize="20sp"
+            android:paddingLeft="80dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Aadhar No:"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/FacultyAadharNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Aadhar Number"
+            android:background="@drawable/custom_edittext"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:inputType="text"
+            android:textSize="18sp">
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Faculty Id:"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/FacultyFacultyId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Faculty Id"
+            android:background="@drawable/custom_edittext"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:inputType="text"
+            android:textSize="18sp">
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Full Name:"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/FacultyFullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Full Name"
+            android:background="@drawable/custom_edittext"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:inputType="text"
+            android:textSize="18sp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Phone No(linked with Aadhar):"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/FacultyPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone Number"
+            android:background="@drawable/custom_edittext"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:inputType="phone"
+            android:textSize="18sp">
+        </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Date Of Birth:"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/FacultyDob"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="DOB"
+            android:background="@drawable/custom_edittext"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:inputType="date"
+            android:textSize="18sp">
+        </EditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Institution Name:"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/FacultyInstitutionName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext"
+            android:hint="Institution Name"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="Travel Route Details"
+            android:textSize="20sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="30dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="From:"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+        </TextView>
+
+        <Spinner
+            android:id="@+id/FacultySpinnerFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext"
+            android:entries="@array/From"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="To:"
+            android:paddingTop="15dp"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+        </TextView>
+        <Spinner
+            android:id="@+id/FacultySpinnerTo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext"
+            android:entries="@array/From"/>
+
+
+        <Button
+            android:id="@+id/FacultySubmit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            android:textAlignment="center">
+        </Button>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+        </View>
+
+    </LinearLayout>
+</ScrollView>

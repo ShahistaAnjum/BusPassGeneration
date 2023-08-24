@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PaymentStudent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Details"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:paddingTop="40dp">
+
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Card Number"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <EditText
+                android:id="@+id/CardNumber"
+                android:layout_width="239dp"
+                android:layout_height="50dp"
+                android:background="@drawable/payment_edittext"
+                android:drawableLeft="@drawable/baseline_credit_card_24"
+                android:drawablePadding="8dp"
+                android:hint="Card Number"
+                android:padding="8dp"
+                android:paddingTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Postal Code"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <EditText
+                android:id="@+id/PostalCode"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/payment_edittext"
+                android:drawableLeft="@drawable/baseline_local_post_office_24"
+                android:drawablePadding="8dp"
+                android:hint="Code"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Experiation Date"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <EditText
+                android:id="@+id/ExperieyDate"
+                android:layout_width="172dp"
+                android:layout_height="50dp"
+                android:background="@drawable/payment_edittext"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="8dp"
+                android:hint="MM/YYYY"
+                android:padding="8dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="CVV"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <EditText
+                android:id="@+id/Cvv"
+                android:layout_width="172dp"
+                android:layout_height="50dp"
+                android:background="@drawable/payment_edittext"
+                android:drawableLeft="@drawable/baseline_numbers_24"
+                android:drawablePadding="8dp"
+                android:hint="123"
+                android:padding="8dp"
+                android:paddingBottom="10dp" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+            </View>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub Total"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingLeft="30dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs   2000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingLeft="50dp"
+        android:textColor="@color/red">
+    </TextView>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/black"
+        android:id="@+id/facultyPay">
+    </Button>
+
+
+
+
+</LinearLayout>

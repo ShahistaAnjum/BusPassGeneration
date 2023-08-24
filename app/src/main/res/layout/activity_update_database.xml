@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDatabase"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aadhar Details"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Updateing the Aadhar Details"
+        android:textSize="26dp"
+        android:layout_gravity="center">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aadhar Number"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp">
+    </TextView>
+    <EditText
+        android:id="@+id/AdminAadharNumber"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:hint="Aadhar No:"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingStart="20dp"
+        android:inputType="phone"
+        android:maxLength="12">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp">
+    </TextView>
+    <EditText
+        android:id="@+id/AdminPhoneNumber"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:hint="Phone No:"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingStart="20dp"
+        android:inputType="phone">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp">
+    </TextView>
+    <EditText
+        android:id="@+id/AdminDob"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:hint="Dob:"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/custom_edittext"
+        android:paddingStart="20dp"
+        android:inputType="date">
+    </EditText>
+    <Button
+        android:id="@+id/AdminUpdate"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:text="Update"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/app_theme"
+        android:textStyle="bold"
+        android:textColor="@color/black">
+    </Button>
+
+</LinearLayout>
